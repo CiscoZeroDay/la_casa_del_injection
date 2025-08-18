@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<title>Blog Interne – Casa de Papel</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+  /* Reset & base */
+  body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    background: #0b0a0a;
+    color: #eee;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  header {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    background: url('/static/hero-nairobi.jpeg') no-repeat center center / cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: #ff0000;
+    text-shadow:
+      2px 2px 10px rgba(255,0,0,0.9),
+      0 0 30px rgba(255,0,0,0.7);
+  }
+
+  /* Dark overlay on header */
+  header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    z-index: 0;
+  }
+
+  header > * {
+    position: relative;
+    z-index: 1;
+  }
+
+  .wrap {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .post {
+    display: flex;
+    align-items: flex-start;
+    background: #1a0d0d;
+    border: 3px solid #b30000;
+    border-radius: 16px;
+    padding: 20px;
+    margin-bottom: 28px;
+    box-shadow:
+      0 8px 15px rgba(179,0,0,0.6),
+      inset 0 0 15px #5a0000;
+    transition: transform 0.3s ease;
+  }
+  .post:hover {
+    transform: scale(1.02);
+    box-shadow:
+      0 12px 25px rgba(255,0,0,0.8),
+      inset 0 0 25px #9f0000;
+  }
+
+  .avatar {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #ff0000;
+    margin-right: 20px;
+    box-shadow: 0 0 15px #ff0000;
+    object-fit: cover;
+    background: #3a0a0a;
+  }
+
+  .post-content {
+    flex: 1;
+  }
+
+  .author {
+    font-weight: 900;
+    font-size: 1.25rem;
+    color: #ff3c3c;
+    margin-bottom: 10px;
+    letter-spacing: 1.5px;
+    text-shadow: 1px 1px 6px rgba(255, 60, 60, 0.8);
+  }
+
+  .message {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #f1d1d1;
+    margin-bottom: 15px;
+  }
+
+  .post img {
+    max-width: 100%;
+    border-radius: 14px;
+    border: 3px solid #ff0000;
+    box-shadow: 0 0 15px #ff0000aa;
+    display: block;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.25s ease;
+  }
+  .post img:hover {
+    transform: scale(1.05);
+  }
+
+  .hint {
+    color: #cc5555;
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  /* Responsive */
+  @media(max-width: 600px) {
+    header {
+      font-size: 2rem;
+      height: 250px;
+    }
+    .post {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .avatar {
+      margin-bottom: 15px;
+      margin-right: 0;
+    }
+  }
+</style>
+</head>
+<body>
+
+<header>Blog Interne – Casa de Papel</header>
+
+<div class="wrap">
+
+  <div class="post">
+    <img class="avatar" src="/static/avatars/lisbon.jpeg" alt="Lisbon" />
+    <div class="post-content">
+      <span class="author">Lisbon</span>
+      <div class="message">
+        Le Professeur a été arrêté par la police. Il a dit que les documents qui peuvent l'innocenter sont sur ce site (ou serveur).
+      </div>
+    </div>
+  </div>
+
+  <div class="post">
+    <img class="avatar" src="/static/avatars/berlin.jpeg" alt="Berlin" />
+    <div class="post-content">
+      <span class="author">Berlin</span>
+      <div class="message">Oh merdeeee !</div>
+    </div>
+  </div>
+
+  <div class="post">
+    <img class="avatar" src="/static/avatars/tokyo.jpeg" alt="Tokyo" />
+    <div class="post-content">
+      <span class="author">Tokyo</span>
+      <div class="message">Je vais appeler Rio, il saura quoi faire.</div>
+    </div>
+  </div>
+
+  <div class="post">
+    <img class="avatar" src="/static/avatars/rio.jpeg" alt="Rio" />
+    <div class="post-content">
+      <span class="author">Rio</span>
+      <div class="message">Je suis là, je vais gérer.</div>
+    </div>
+  </div>
+
+  <div class="post">
+    <img class="avatar" src="/static/avatars/berlin.jpeg" alt="Berlin" />
+    <div class="post-content">
+      <span class="author">Berlin</span>
+      <div class="message">Le Professeur m'a envoyé cette photo avant d'être arrêté :</div>
+      <a href="/static/banksy_girl_with_balloon.jpg" download="banksy_girl_with_balloon.jpg">
+        <img src="/static/banksy_girl_with_balloon.jpg" alt="Photo du Professeur" />
+      </a>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>
