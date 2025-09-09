@@ -2,7 +2,7 @@
 - **Category**: Web
 - **Level:** : Medium
 
-**Description:** Le professeur est attarpé par la police d'Espagne, et il a besoin de toi pour trouver deux document sur leur système privé. Ces documens contient le flag qui va innocenter le Professor.
+**Description:** Le professeur est attrapé par la police d'Espagne, et il a besoin de toi pour trouver deux document sur leur système privé. Ces documens contient le flag qui va innocenter le Professor.
 Tu vas travailler avec l'equipe de Casa del Papel pour ca.
 
 ----------------------------------------------------------------------
